@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    padding: 15px;
+    font-weight: bold;
+}
+
+.nav {
+    background: lightblue;
+}
+.nav ul{
+    display: flex;
+    
+}
+.nav ul li {
+    padding: 14px 16px;
+    list-style: none;
+}
+.nav ul li:hover{
+    background: white;
+    color: black;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.header {
+    height: 250px;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('../img/header.JPG');
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+.header p{
+    text-align: center;
+    font-size: 35px;
+    line-height: 250px;    
+}
+.main{
+    width: 80%;
+    margin: 0 auto;
+}
+.displayInfo {
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+.partition{
+    display: flex;
+}
+.col{
+    width: 25%;
+    height:  300px;
+    margin-right: 5px;
+}
+.col1{
+    height: 150px;
+    background: url('../img/1.JPG');
+    background-size: cover;
+    background-position: center;
+}
+
+.col2{
+    height: 150px;
+    background: url('../img/2.JPG');
+    background-size: cover;
+    background-position: center;
+}
+.col3{
+    height: 150px;
+    background: url('../img/3.JPG');
+    background-size: cover;
+    background-position: center;
+}
+.col4{
+    height: 150px;
+    background: url('../img/4.JPG');
+    background-size: cover;
+    background-position: center;
+}
+.col5{
+    height: 150px;
+    background: url('../img/5.JPG');
+    background-size: cover;
+    background-position: center;
+}
+/* Hover effect */
+.col:hover{
+    opacity: 0.9;
+}
+
+/* Responsive codes */
+@media screen  and (max-width: 600px){
+    .logo{
+        
+        text-align: center;
+    } 
+    .nav ul{
+        display: flex;
+        flex-direction: column;        
+    } 
+    .main{
+        width: 100%;
+        padding: 10px;
+    } 
+    .partition {
+        display: flex;
+        flex-direction: column;
+    } 
+    .col{
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .col1,.col2,.col3,.col4,.col5{
+        height: 300px;
+    }
+}
